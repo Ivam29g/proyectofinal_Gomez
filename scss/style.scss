@@ -8,16 +8,20 @@ h1 {
     color: red;
 }
 
+
 #menu{
     display: flex;
     height: 100%;
-    background: gray;
-    justify-content: space-between;
+    background: #28a3a5;
+    justify-content: space-around;
 }
 
-#menu img {
-    width: 300px;
-    height: auto;
+#menu p {
+    font-size: 50px;
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #0065DB;
+    text-align: center;
 }
 
 #menu ul li{
@@ -36,23 +40,12 @@ h1 {
 }
 
 #menu ul li a:hover{
-    color: #37bcf9;
+    color: white;  
     transform: scale(1.2, 1.2);
 }
 
-.bienvenidos {
+.imagen img {
     width: 100%;
-}
-
-.bienvenidos p{
-    font-size: 80px;
-    text-align: center;
-    align-items: center;
-}
-
-.bienvenidos img {
-    width: 100vw;
-    height: auto;
 }
 
 .especialidades p{
@@ -173,8 +166,13 @@ h1 {
     margin-top: 195px;
 }
 
+.productos {
+    display: flex;
+}
+
 .card2 {
-    width: 449px;
+    flex-grow: 1;
+    width: 425px;
     height: 500px;
     margin: 50px;
     margin-top: 350px;
@@ -184,19 +182,19 @@ h1 {
 }
 
 .card2 img {
-    width: 350px;
-    height: 365px;
+    width: 251px;
+    height: 237px;
     border-radius: 3px;
     margin: 30px;
 }
 
 .intro {
     height: 70px;
-    width: 449px;
+    width: 425px;
     padding: 6px;
     box-sizing: border-box;
     position: absolute;
-    bottom: -2492px;
+    bottom: -2480px;
     background: rgb(27, 27, 27, .5);
     color: white;
     transition: all 300ms;
@@ -221,7 +219,7 @@ h1 {
 
 .card2:hover .intro {
     height: 220px;
-    bottom: -2492px;
+    bottom: -2480px;
     background: rgb(27, 27, 27, .5);
 }
 
@@ -235,29 +233,31 @@ h1 {
 }
 
 .card3 {
-    width: 449px;
+    flex-grow: 1;
+    width: 425px;
     height: 500px;
     margin: 50px;
-    margin-top: 80px;
+    margin-top: 350px;
     box-shadow: 5px 5px 20px #000;
     overflow: hidden;
     justify-content: space-around;
+    margin-top: 50px;
 }
 
 .card3 img {
-    width: 350px;
-    height: 365px;
+    width: 251px;
+    height: 237px;
     border-radius: 3px;
     margin: 30px;
 }
 
-.intro2 {
+.intro3 {
     height: 70px;
-    width: 449px;
+    width: 425px;
     padding: 6px;
     box-sizing: border-box;
     position: absolute;
-    bottom: -2492px;
+    bottom: -3380px;
     background: rgb(27, 27, 27, .5);
     color: white;
     transition: all 300ms;
@@ -280,9 +280,9 @@ h1 {
     transition: all 300ms;
 }
 
-.card3:hover .intro2 {
+.card3:hover .intro3 {
     height: 220px;
-    bottom: -2492px;
+    bottom: -3380px;
     background: rgb(27, 27, 27, .5);
 }
 
