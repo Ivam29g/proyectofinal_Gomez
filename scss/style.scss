@@ -9,10 +9,6 @@ body {
     height: 3200px;
 }
 
-h1 {
-    color: red;
-}
-
 img {
     max-width: 100%;
 }
@@ -29,6 +25,7 @@ img {
 
 #menu img {
     flex-wrap: wrap;
+    width: 100%;
     width: 450px;
     margin-top: 10px;
 }
@@ -364,7 +361,69 @@ img {
     }
 }
 
+@media screen and (max-width: 1200px) {
+    #projects {
+        margin-left: 200px;
+        justify-content: center;
+    }
+
+    .project {
+        width: 300px;
+        height: 298px;
+    }
+}
 
 
+@media screen and (max-width: 1088px){
+    #projects {
+        padding-left: 213px;
+    }
+       
+}
 
 
+@media screen and (max-width:992px) {
+    .project {
+        width: 341px;
+        height: 298px;
+        margin-bottom: 25px;
+        margin: 0 20px;
+    }
+}
+
+
+@media screen and (max-width:964px) {
+    .project {
+        width: 300px;
+        height: 298px;
+        margin-bottom: 25px;
+        margin: 0 20px;
+    }
+}
+
+@media screen and (max-width:750px) {
+
+    #projects {
+        margin-left: -2px;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .formulario .nombre, .email, .tel, .ciudad, .mensaje{
+        width: 96%;
+    }
+
+    .container1 .card {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    #projects {
+        margin-left: -218px;
+    }
+}
+
+@media screen and (min-width: 526px) {
+    
+}
