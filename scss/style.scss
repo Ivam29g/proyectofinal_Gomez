@@ -27,12 +27,10 @@ img {
     background-attachment: fixed;
 }
 
-#menu p {
-    font-size: 50px;
+#menu img {
+    flex-wrap: wrap;
+    width: 450px;
     margin-top: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #0065DB;
-    text-align: center;
 }
 
 #menu ul li{
@@ -61,6 +59,7 @@ img {
 
 .especialidades p{
     font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     margin-top: 60px;
 }
@@ -99,7 +98,7 @@ img {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-top: 150px;
+    margin-top: 70px;
 }
 .container{
     text-align: center;
@@ -155,7 +154,7 @@ img {
 
 .card .back {
     transform: perspective(600px) rotateY(180deg);
-    background: rgb(3, 35, 54);
+    background: #0c6f47;
     padding: 15px;
     color: #f3f3f3;
     display: flex;
@@ -193,6 +192,10 @@ img {
 
 .card:hover .back {
     transform: perspective(600px) rotateY(360deg);
+}
+
+.productos {
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #projects{
@@ -323,6 +326,41 @@ img {
 
     .container1 .card {
         width: 95%;
+    }
+}
+
+.footer {
+    background: #333333;
+    font-family: sans-serif;
+
+    .contenedor{
+        width: 90%;
+        margin: 0 auto;
+        padding: 20px 10px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo {
+        flex-wrap: wrap;
+        width: 450px;
+        margin-top: 10px;
+    } 
+
+    .matricula, .informacion{
+        color: #cdcdcd;
+        font-size: 18px;
+    }
+
+    .informacion img {
+        width: 250px;
+    }
+
+    .matricula:hover,
+    .informacion:hover{
+        color: white;
     }
 }
 
