@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+body {
+    width: 100%;
+    height: 3200px;
+}
+
 h1 {
     color: red;
 }
@@ -61,6 +66,7 @@ img {
 
 .container2 {
     display: flex;
+    flex-wrap: wrap;
     width: 95%;
     margin: 0 auto;
     padding: 20px;
@@ -82,8 +88,6 @@ img {
 }
 
 
-
-
 .titulo {
     font-size: 32px;
     text-align: center;
@@ -92,6 +96,7 @@ img {
 
 .container1 {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     margin-top: 150px;
 }
@@ -196,6 +201,7 @@ img {
     align-items: start;
     margin-top: 72px;
     padding-left: 86px;
+    margin-bottom: 200px;
 }
 
 .project {
@@ -239,3 +245,87 @@ img {
     text-align: center;
     margin-top: 100px;
 }
+
+.contacto{
+    margin-top: 80px;
+    background: #c1c1c1;
+    padding: 50px 0;
+}
+
+.contacto h3 {
+    font-size: 24px;
+    font-weight: bolder;
+    color: #0cba74;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.contacto .contenedor .formulario{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.formulario .nombre, .email, .tel, .ciudad, .mensaje{
+    background: none;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid gray;
+    padding: 15px 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    color: black;
+    transition: all 1s ease;
+    margin-bottom: 20px;
+}
+
+.formulario .nombre, .email, .tel, .ciudad{
+    width: 46%;
+}
+
+.formulario .mensaje {
+    width: 96%;
+    resize: none;
+    
+}
+
+.formulario .nombre:focus,
+.formulario .email:focus,
+.formulario .tel:focus,
+.formulario .ciudad:focus,
+.formulario .mensaje:focus{
+    border-bottom: 3px solid #0cba74;
+}
+
+.formulario .btn {
+    margin: auto;
+    padding: 15px 25px;
+    font-size: 16px;
+    font-family: "calibri";
+    font-weight: bolder;
+    border: none;
+    background: none;
+    background-color: #0cba74;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.formulario .btn:hover{
+    background: #0c6f47;
+}
+
+@media screen and (max-width: 700px){
+    .formulario .nombre, .email, .tel, .ciudad, .mensaje{
+        width: 96%;
+    }
+
+    .container1 .card {
+        width: 95%;
+    }
+}
+
+
+
+
+

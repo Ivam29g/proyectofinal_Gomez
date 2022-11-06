@@ -20,7 +20,7 @@
                     <li><a href="#nosotros">NOSOTROS</a></li>
                     <li><a href="#nuestras_especialidades">SERVICIO</a></li>
                     <li><a href="#projects">PRODUCTOS</a></li>
-                    <li><a href="#contacto">CONTACTO</a></li>
+                    <li><a href="#solicitud">CONTACTO</a></li>
                 </ul>
             </div>
         </nav>
@@ -67,7 +67,7 @@
                             diagnostico de tu equipo para determinar la causa del error y darte la solución mas
                             acertada, sin costos adicionales.
                         <div class="link">
-                            <a href="#">Detalles</a>
+                            <a href="#solicitud">Detalles</a>
                         </div>
                         </p>
                     </div>
@@ -75,7 +75,7 @@
 
                 <div class="card">
                     <div class="face front">
-                        <img src="./assets/img/camara.jpg" alt="españa">
+                        <img src="./assets/img/camara.jpg" alt="camara de seguridad">
                         <h3>Seguridad</h3>
                     </div>
                     <div class="face back">
@@ -86,7 +86,7 @@
                             espías mimetizadas en objetos cotidianos. Adición de cámaras nuevas.
                         </p>
                         <div class="link">
-                            <a href="#">Detalles</a>
+                            <a href="#solicitud">Detalles</a>
                         </div>
                         </p>
                     </div>
@@ -94,7 +94,7 @@
 
                 <div class="card">
                     <div class="face front">
-                        <img src="./assets/img/impresion_3D.png" alt="peru">
+                        <img src="./assets/img/impresion_3D.png" alt="impresion 3D">
                         <h3>Impresión 3D</h3>
                     </div>
                     <div class="face back">
@@ -103,7 +103,7 @@
                             El mejor y más rápido servicio de impresión 3D al precio justo en plásticos y resinas.
                             Impresión 3D en PLA , PETG, ABS Flexibles, Resinas. Manufactura en 3D servicios asesoria.
                         <div class="link">
-                            <a href="#">Detalles</a>
+                            <a href="#solicitud">Detalles</a>
                         </div>
                         </p>
                     </div>
@@ -215,53 +215,37 @@
                 </article>
         </section>
 
-        <section>
-            <h2 class="titulo">CONTACTO</h2>
-            <div>
-                <div>
-                    <p>Dirección: Carrera 74 I # 62 G 39 sur</p>
-                    <p>Celular: 3118692974</p>
-                    <p>Email: esperanza_barona@carbonellcali.com</p>
-                </div>
+        <section id="solicitud" class="contacto">
+            <h3>Contáctanos</h3>
+           <div class="contenedor">
 
-                <form action="">
-                    <div id="contacto">
-                        <div>
-                            <label for="nombre">Nombre</label>
-                            <input type="text" name="nombre" id="nombre" required placeholder="Su nombre">
-                        </div>
+                <form action="" class="formulario">  
+                    <input type="text" class="nombre" placeholder="Nombre">
 
-                        <div>
-                            <label for="Telefono">Telefono</label>
-                            <input type="telefono" name="telefono" id="telefono" required placeholder="Su teléfono">
-                        </div>
+                    <input type="email" class="email" placeholder="Correo">
 
-                        <div>
-                            <label for="email">Email</label>
-                            <input type="email" name="correo" id="email" required placeholder="Su correo">
-                        </div>
-                    </div>
+                    <input type="text" class="tel" placeholder="Número de telefono">
 
-                    <div>
-                        <label for="mensaje">¿En que podemos ayudarte?</label>
-                        <textarea name="mensaje" id="mensaje" cols="30" rows="10"
-                            placeholder="Dejanos tu consulta"></textarea>
-                    </div>
+                    <select name="ciudad" id="ciudad" class="ciudad">
+                        <option value="" selected disabled>Selecciona tu ciudad</option>
+                        <option value="arg">Bogotá</option>
+                        <option value="arg">Medellin</option>
+                        <option value="arg">Cali</option>
+                        <option value="arg">Barranquilla</option>
+                    </select>
 
-                    <input type="submit" value="Enviar">
+                    <textarea name="mensaje" id="mensaje" class="mensaje" placeholder="Deja tu mensaje"></textarea>
+
+                    <input type="submit" value="contacto" class="btn">
                 </form>
-            </div>
 
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3977.0206953355!2d-74.17619120899602!3d4.590308928008165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9e54ebc3d0d1%3A0x64b4a5d40672320!2sCra.%2074i%20%2362-15%2C%20Bogot%C3%A1!5e0!3m2!1ses!2sco!4v1667667275513!5m2!1ses!2sco"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
+           </div>
         </section>
 
 
     </main>
 
-    <footer>
+    <!-- <footer>
         <div>
             <a href="#">Facebook</a>
             <a href="#">Instagram</a>
@@ -271,7 +255,7 @@
             <small>&copy; Derechos Resevados Ivan Gómez</small>
         </div>
     </footer>
-
+ -->
 
 
 
